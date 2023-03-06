@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.content{
+background: #0d6ffc;
+ 
+}
+
+h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: 20px;
+    margin: 0PX;
+    font-size: 40px;
+    
+}
+
+h3{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: 20px;
+    margin: 0PX;
+    font-size: 30px;
+    
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<meta charset="utf-8" name="viewport"
+		content="width=device-width, initial-scale=1"
+		http-equiv="X-UA-Conpatible" />
+	<title>Biblioteca</title>
+</h:head>
+<h:body>
+	<h2>
+		<h:outputText value="Editar Usuario"></h:outputText>
+	</h2>
+	
+	<h:form>
+		<h:panelGrid>
+			<f:facet name="header">
+				<h:outputText value="Editar"></h:outputText>
+			</f:facet>
+			
+			<h:outputText value="Nombre"></h:outputText>
+			<p:inputText value="#{usuario.nombre}"></p:inputText>
+			
+			<h:outputText value="Apellido"></h:outputText>
+			<h:inputText value="#{usuario.apellido}"></h:inputText>
+			
+			<h:outputText value="Direccion"></h:outputText>
+			<h:inputText value="#{usuario.direccion}"></h:inputText>
+			
+			<h:outputText value="Ciudad"></h:outputText>
+			<h:inputText value="#{usuario.ciudad}"></h:inputText>
+			
+			<h:outputText value="Telefono"></h:outputText>
+			<h:inputText value="#{usuario.telefono}"></h:inputText>
+			
+			<h:outputText value="Cédula"></h:outputText>
+			<h:inputText value="#{usuario.cedula}"></h:inputText>
+			
+			<h:outputText value="Tipo usuario"></h:outputText>
+			<h:inputText value="#{usuario.tipo_usuario}"></h:inputText>
+			
+			<h:outputText value="Username"></h:outputText>
+			<h:inputText value="#{usuario.username}"></h:inputText>
+			
+			<f:facet name="footer">
+				<h:commandButton action="#{usuario_mosBean.actualizar(usuario)}" value="Actualizar"></h:commandButton>
+			</f:facet>
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>
