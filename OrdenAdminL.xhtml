@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Insert title here</title>
+</head>
+<body>
+
+    <div class="content">
+		<h2>
+			<h:outputText value="ADMINISTRADOR"></h:outputText>
+		</h2>
+		<h3>
+			<h:outputText value="Nuevo Libro"></h:outputText>
+		</h3>
+	</div>
+    
+    <h:form>
+        <h:panelGrid>
+            <f:facet name="header">
+                <h:outputText value="Crear"></h:outputText>
+            </f:facet>
+            <h:outputText value="Titulo"></h:outputText>
+            <h:inputText value="#{libros.titulo}"></h:inputText>            
+            <h:outputText value="Nombre del Autor"></h:outputText>
+            <h:inputText value="#{libros.nombre_autor}"></h:inputText>
+            
+            <h:outputText value="Apellido del Autor"></h:outputText>
+            <h:inputText value="#{libros.apellido_autor}"></h:inputText>
+            
+            <h:outputText value="Categoria"></h:outputText>
+            <h:inputText value="#{libros.categoria}"></h:inputText>
+            
+            <h:outputText value="Precio"></h:outputText>
+            <h:inputText value="#{libros.precio}"></h:inputText>
+                        
+           <f:facet name="footer">
+				<h:commandButton action="#{librosBean.actualizar(libros)}" value="Actualizar"></h:commandButton>
+			</f:facet>
+        </h:panelGrid>
+    </h:form>
+    
+</body>
+</html>
